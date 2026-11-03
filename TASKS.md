@@ -6,10 +6,10 @@ a suggested conventional commit message, then wait for "next".
 
 - [x] **T01** chore: scaffold Next.js + TS strict + Tailwind v4 + ESLint/Prettier, clean boilerplate
 - [x] **T02** chore: init shadcn/ui (only needed components) + design tokens in globals.css `@theme` + IBM Plex fonts
-- [ ] **T03** feat: `TenderDocument` types + 34 realistic mock documents (26 ingested / 5 pending / 3 failed)
-- [ ] **T04** feat: fake API layer (300–800ms latency, random retry failures) + format helpers (size, date)
-- [ ] **T05** feat: app shell layout (sidebar, top bar), responsive
-- [ ] **T06** feat: StatusBadge + DocumentTable (desktop) rendering mock data
+- [x] **T03** feat: `TenderDocument` types + 34 realistic mock documents (26 ingested / 5 pending / 3 failed)
+- [x] **T04** feat: fake API layer (300–800ms latency, random retry failures) + format helpers (size, date)
+- [x] **T05** feat: app shell layout (sidebar, top bar), responsive
+- [x] **T06** feat: StatusBadge + DocumentTable (desktop) rendering mock data
 - [ ] **T07** feat: summary StatCards (Total / Ingested / Pending / Failed) with share bars
 - [ ] **T08** feat: pure filter functions + debounced search + status & category filters
 - [ ] **T09** feat: sync search/filter/page state to URL query params + pagination
