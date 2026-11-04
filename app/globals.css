@@ -149,6 +149,12 @@
       animation: none;
     }
   }
+  /* Baseline keyboard focus ring; :where() keeps specificity 0 so component
+     styles can still override it. */
+  :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+  }
 }
 
 @keyframes vb-pulse {

@@ -10,14 +10,15 @@ a suggested conventional commit message, then wait for "next".
 - [x] **T04** feat: fake API layer (300–800ms latency, random retry failures) + format helpers (size, date)
 - [x] **T05** feat: app shell layout (sidebar, top bar), responsive
 - [x] **T06** feat: StatusBadge + DocumentTable (desktop) rendering mock data
-- [ ] **T07** feat: summary StatCards (Total / Ingested / Pending / Failed) with share bars
-- [ ] **T08** feat: pure filter functions + debounced search + status & category filters
-- [ ] **T09** feat: sync search/filter/page state to URL query params + pagination
-- [ ] **T10** feat: DocumentDetailSheet (metadata, status timeline, error message)
-- [ ] **T11** feat: actions — change status, retry Failed — optimistic update, toast, rollback
-- [ ] **T12** feat: mobile — DocumentCard list, filters in bottom sheet, full-screen detail
-- [ ] **T13** feat: loading skeleton, empty result (Clear filters), error state
-- [ ] **T14** fix: accessibility pass (keyboard nav, labels, focus, contrast)
-- [ ] **T15** test: Vitest + RTL — filters, format helpers, search+filter integration test
-- [ ] **T16** docs: README (overview, live demo placeholder, stack, run locally, structure, trade-offs, next)
-- [ ] **T17** chore: final check — `npm run build` passes, no console errors, ready for Vercel
+- [x] **T07** feat: summary StatCards (Total / Ingested / Pending / Failed) with share bars
+- [x] **T08** feat: pure filter functions + debounced search + status & category filters
+- [x] **T09** feat: sync search/filter/page state to URL query params + pagination
+- [x] **T10** feat: DocumentDetailSheet (metadata, status timeline, error message)
+- [x] **T10b** refactor: adopt SWR (data fetching) + TanStack Table v8 (columns + URL-synced Uploaded sorting); filtering/search/pagination stay in lib/filters.ts
+- [x] **T11** feat: actions — change status, retry Failed — optimistic update, toast, rollback
+- [x] **T12** feat: mobile — DocumentCard list, filters in bottom sheet, full-screen detail
+- [x] **T13** feat: loading skeleton, empty result (Clear filters), error state
+- [x] **T14** fix: accessibility pass (keyboard nav, labels, focus, contrast)
+- [x] **T15** test: Vitest + RTL — filters, format helpers, search+filter integration test
+- [x] **T16** docs: README (overview, live demo placeholder, stack, run locally, structure, trade-offs, next)
+- [x] **T17** chore: final check — `npm run build` passes, no console errors, ready for Vercel

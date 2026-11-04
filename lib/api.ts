@@ -25,21 +25,17 @@ function clone(docs: TenderDocument[]): TenderDocument[] {
 }
 
 let store: TenderDocument[] = clone(MOCK_DOCUMENTS);
-let forceLoadError = false;
-
-/** Lets a caller (e.g. an "?error=1" affordance) exercise the load error path. */
-export function setForceLoadError(value: boolean): void {
-  forceLoadError = value;
-}
 
 /** Restores the dataset to its seeded state. Used by tests. */
 export function resetStore(): void {
   store = clone(MOCK_DOCUMENTS);
 }
 
-export async function getDocuments(): Promise<TenderDocument[]> {
+export async function getDocuments(
+  options: { simulateError?: boolean } = {},
+): Promise<TenderDocument[]> {
   await delay();
-  if (forceLoadError) {
+  if (options.simulateError) {
     throw new ApiError(503, "The document service is temporarily unavailable.");
   }
   return clone(store);
